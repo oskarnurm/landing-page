@@ -1,5 +1,5 @@
 body {
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -35,7 +35,7 @@ body {
   width: 100%;
   background-color: #1f2937;
   padding-top: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 .hook {
@@ -58,17 +58,84 @@ body {
   border-radius: 20%;
 }
 
-.presentation {
+.artwork {
   text-align: center;
+  padding-bottom: 50px;
+  padding-top: 10px;
 }
 
 .title {
   font-size: 36px;
   font-weight: 900;
+  padding: 20px;
+  color: #1f2937;
 }
-.container {
+.images {
   display: flex;
   justify-content: space-evenly;
+  gap: 40px;
+}
+
+.images img {
+  border: 3px solid #3882f6;
+  border-radius: 20px;
+  width: 150px;
+  height: 150px;
+}
+
+.img-text {
+  font-size: 18px;
+  color: #1f2937;
+}
+
+.quote {
+  background-color: #e5e7eb;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+.quote .text {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: lighter;
+  color: #1f2937;
+  max-width: 700px;
+}
+
+.signature {
+  font-weight: 900;
+  font-size: 20px;
+  font-style: normal;
+  text-align: right;
+}
+
+.action {
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+.modal {
+  background: #3882f6;
+  display: flex;
+  padding: 50px;
+  border-radius: 10px;
+  gap: 50px;
+  align-items: center;
+}
+
+.modal .text {
+  color: white;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.normal {
+  font-weight: normal;
+  font-size: 18px;
 }
 
 a {
@@ -91,10 +158,22 @@ img {
   border-radius: 5px;
 }
 
-button {
+.btn {
   background-color: #3882f6;
   color: #f9faf8;
   border-radius: 8px;
   border: none;
   padding: 5px 15px;
+}
+
+.bigger {
+  padding: 15px;
+}
+
+.border {
+  border: 2px solid white;
+}
+
+.btn:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }

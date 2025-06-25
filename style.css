@@ -1,15 +1,20 @@
+body,
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  margin: 0;
 }
 
-.logo {
-  font-size: 24px;
-  color: #f9faf8;
-  font-weight: 900;
+ul {
+  list-style: none;
 }
 
 .header,
@@ -17,161 +22,161 @@ body {
   display: flex;
   justify-content: space-evenly;
   background-color: #1f2937;
-  color: white;
+  color: #f9faf8;
   padding: 20px;
 }
 
-.main {
+.header__logo {
+  font-size: 24px;
+  color: #f9faf8;
+  font-weight: 900;
+}
+
+.header__nav ul {
   display: flex;
-  flex-direction: column;
-  flex: 1;
-  align-items: center;
+  gap: 16px;
+}
+
+.header__nav a {
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 18;
 }
 
 .hero {
   display: flex;
-  gap: 10px;
   justify-content: center;
+  gap: 10px;
   width: 100%;
-  background-color: #1f2937;
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: #1f2937;
 }
 
-.hook {
+.hero__content {
   max-width: 500px;
 }
 
-.hero-text {
+.hero__title {
   font-size: 48px;
   font-weight: 900;
   color: #f8faf8;
 }
 
-.subtext {
+.hero__subtitle {
   font-size: 18px;
   color: #e5e7eb;
   padding-bottom: 8px;
 }
 
-.hero img {
-  border-radius: 20%;
+.hero__media img {
+  width: 200px;
+  height: 200px;
 }
 
-.artwork {
+.gallery {
   text-align: center;
   padding-bottom: 50px;
   padding-top: 10px;
 }
 
-.title {
+.gallery__title {
   font-size: 36px;
   font-weight: 900;
   padding: 20px;
   color: #1f2937;
 }
-.images {
+.gallery__list {
   display: flex;
-  justify-content: space-evenly;
-  gap: 40px;
+  justify-content: center;
+  gap: 20px;
 }
 
-.images img {
-  border: 3px solid #3882f6;
+.gallery__item img {
   border-radius: 20px;
   width: 150px;
   height: 150px;
+  border: 3px solid #3882f6;
 }
 
-.img-text {
+.gallery__caption {
   font-size: 18px;
   color: #1f2937;
 }
 
-.quote {
-  background-color: #e5e7eb;
-  width: 100%;
+.testimonial {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 80px;
   padding-top: 80px;
+  width: 100%;
+  background-color: #e5e7eb;
 }
 
-.quote .text {
+.testimonial__text {
   font-size: 36px;
+  max-width: 700px;
   font-style: italic;
   font-weight: lighter;
   color: #1f2937;
-  max-width: 700px;
 }
 
-.signature {
+.testimonial__author {
   font-weight: 900;
   font-size: 20px;
-  font-style: normal;
   text-align: right;
 }
 
-.action {
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-bottom: 80px;
   padding-top: 80px;
 }
 
-.modal {
-  background: #3882f6;
+.cta__modal {
   display: flex;
+  align-items: center;
+  gap: 50px;
   padding: 50px;
   border-radius: 10px;
-  gap: 50px;
-  align-items: center;
+  background: #3882f6;
 }
 
-.modal .text {
-  color: white;
-  font-weight: 900;
-  font-size: 18px;
-}
-
-.normal {
-  font-weight: normal;
-  font-size: 18px;
-}
-
-a {
-  text-decoration: none;
+.cta__message,
+.cta__details {
   color: #e5e7eb;
+}
+
+.cta__message {
   font-size: 18px;
+  font-weight: 900;
 }
 
-ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 16px;
-}
-
-img {
-  width: 200px;
-  height: 200px;
-  border-radius: 5px;
+.cta__details {
+  padding-top: 5px;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 .btn {
+  border: none;
+  border-radius: 8px;
+  padding: 5px 15px;
   background-color: #3882f6;
   color: #f9faf8;
-  border-radius: 8px;
-  border: none;
-  padding: 5px 15px;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
 }
 
-.bigger {
+.btn--large {
   padding: 15px;
 }
 
-.border {
-  border: 2px solid white;
+.btn--outline {
+  border: 2px solid #f9faf8;
 }
 
 .btn:hover {

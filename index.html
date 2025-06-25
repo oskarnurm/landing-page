@@ -7,70 +7,73 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
-    <div class="header">
-      <div class="logo">CATAI</div>
-      <ul class="right-links">
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 2</a></li>
-        <li><a href="#">Link 3</a></li>
-      </ul>
-    </div>
-    <div class="main">
-      <div class="hero">
-        <div class="hook">
-          <div class="hero-text">Godlike cats</div>
-          <div class="subtext">Sign up, and the almighty cat god Odin will summon the most prestigious pictures of his servants every week because there are never enough images of cats!</div>
-          <button class="btn">Sign up!</button>
+    <header class="header">
+      <div class="header__logo">GODCAT</div>
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li><a href="#">We</a></li>
+          <li><a href="#">Like</a></li>
+          <li><a href="#">Cats</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">Godlike cats</h1>
+          <p class="hero__subtitle">Sign up, and the almighty cat god Odin will summon the most prestigious pictures of his servants every week because there are never enough images of cats!
+          </p>
+          <button class="btn btn--primary">Sign up!</button>
         </div>
-        <div>
+        <div class="hero__media">
           <img src="./assets/odin.png" alt="Almighty Odin">
         </div>
-      </div>
-      <div class="artwork">
-        <div class="title">
+      </section>
+      <section class="gallery">
+        <h2 class="gallery__title">
           Example Artwork:
-        </div>
-        <div class="images">
-          <div class="info">
-            <img src="./assets/frigg.png" alt="img 1">
-            <div class="img-text">Frigg</div>
+        </h2>
+        <div class="gallery__list">
+          <div class="gallery__item">
+            <img src="./assets/frigg.png" alt="Frigg">
+            <figcaption class="gallery__caption">Frigg</figcaption>
           </div>
-          <div class="info">
-            <img src="./assets/heimdall.png" alt="img 2">
-            <div class="img-text">Heimdall</div>
+          <div class="gallery__item">
+            <img src="./assets/heimdall.png" alt="Heimdall">
+            <figcaption class="gallery__caption">Heimdall</figcaption>
           </div>
-          <div class="info">
-            <img src="./assets/loki.png" alt="img 3">
-            <div class="img-text">Loki</div>
+          <div class="gallery__item">
+            <img src="./assets/loki.png" alt="Loki">
+            <figcaption class="gallery__caption">Loki</figcaption>
           </div>
-          <div class="info">
-            <img src="./assets/thor.png" alt="img 4">
-            <div class="img-text">Thor</div>
-          </div>
-        </div>
-      </div>
-      <div class="quote">
-        <div class="text">
-          A cartoon-style illustration of a cat as a Norse god with a serious expression, a helmet, a cloak with a brooch, and themed background. The centered composition resembles a heroic portrait, with clean 2D lines and muted, rich tones.
-          <div class="signature">
-            - Odin, God of Prompts
+          <div class="gallery__item">
+            <img src="./assets/thor.png" alt="Thor">
+            <figcaption class="gallery__caption">Thor</figcaption>
           </div>
         </div>
-      </div>
-      <div class="action">
-        <div class="modal">
-          <div class="text">
-            Prompt some slop! It's time!
-            <div class="normal">
+      </section>
+      <aside class="testimonial">
+        <blockquote class="testimonial__text">
+          A cartoon-style cat as a Norse god with a godlike expression, helmet, cloak and background. The centered composition resembles a heroic portrait, with mighty 2D lines and muted, rich tones.
+          <footer class="testimonial__author">
+            - Odin, Cat God of Prompts
+          </footer>
+        </blockquote>
+      </aside>
+      <section class="cta">
+        <div class="cta__modal">
+          <div class="cta__message">
+            Lets create some cats. It's Time!
+            <div class="cta__details">
               Sign up if you want to be spammed by a punch of cats by clicking the button right over there!
             </div>
           </div>
-          <button class="btn bigger border">Sign me up!</button>
+          <button class="btn btn--large btn--outline">SIGN ME UP</button>
         </div>
-      </div>
-    </div>
-    <div class="footer">
-      Copyright by CorpoCorp
-    </div>
+      </section>
+    </main>
+    <footer class="footer">
+      Copyright by CorpoCat
+    </footer>
   </body>
 </html>
